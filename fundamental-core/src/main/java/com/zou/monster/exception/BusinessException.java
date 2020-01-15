@@ -11,24 +11,23 @@ public class BusinessException extends RuntimeException implements CommonError {
 
     private ErrorEnum errorEnum;
 
-
     @Override
     public Integer getErrorCode() {
-        return null;
+        return errorEnum.getErrorCode();
     }
 
     @Override
     public String getErrorMessage() {
-        return null;
+        return errorEnum.getErrorMessage();
     }
 
     @Override
     public String getErrorMessageEn() {
-        return null;
+        return errorEnum.getErrorMessageEn();
     }
 
     @Override
     public CommonError setErrorMessage(String errorMessage) {
-        return null;
+        return errorEnum.setErrorMessage(errorMessage);
     }
 }

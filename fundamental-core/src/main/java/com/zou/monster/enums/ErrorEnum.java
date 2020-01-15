@@ -1,7 +1,6 @@
 package com.zou.monster.enums;
 
 import com.zou.monster.error.CommonError;
-import lombok.Getter;
 
 /**
  * 基础错误枚举类
@@ -61,21 +60,22 @@ public enum ErrorEnum implements CommonError {
 
     @Override
     public Integer getErrorCode() {
-        return null;
+        return this.code;
     }
 
     @Override
     public String getErrorMessage() {
-        return null;
+        return this.messageEn;
     }
 
     @Override
     public String getErrorMessageEn() {
-        return null;
+        return this.messageEn;
     }
 
     @Override
     public CommonError setErrorMessage(String errorMessage) {
-        return null;
+        this.message = errorMessage;
+        return this;
     }
 }

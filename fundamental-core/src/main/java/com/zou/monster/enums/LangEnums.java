@@ -10,6 +10,7 @@ public enum LangEnums {
     /**
      * 国际化语言类型
      */
+    UNKNOWN(-1,"未知"),
     LANG_EN(0, "英文"),
     LANG_ZH(1, "中文");
     private Integer type;
